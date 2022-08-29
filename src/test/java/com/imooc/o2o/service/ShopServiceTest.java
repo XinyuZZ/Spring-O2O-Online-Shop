@@ -49,5 +49,4 @@ public class ShopServiceTest extends BaseTest {
         ShopExecution se = shopService.addShop(shop, is, shopImg.getName());
         assertEquals(ShopStateEnum.CHECK.getState(), se.getState());
     }
-
 }
