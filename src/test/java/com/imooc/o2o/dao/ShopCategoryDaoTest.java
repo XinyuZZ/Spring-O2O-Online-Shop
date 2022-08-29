@@ -17,7 +17,7 @@ public class ShopCategoryDaoTest extends BaseTest {
         List<ShopCategory> shopCategoryList = shopCategoryDao.queryShopCategory(new ShopCategory());
         ShopCategory test1 = new ShopCategory();
         ShopCategory test2 = new ShopCategory();
-        test1.setShopCategoryId(27L);
+        test1.setShopCategoryId(1L);
         test2.setParent(test1);
         shopCategoryList = shopCategoryDao.queryShopCategory(test2);
         System.out.println("--------------");

@@ -22,9 +22,7 @@ import static org.junit.Assert.assertEquals;
 public class ShopServiceTest extends BaseTest {
     @Autowired
     private ShopService shopService;
-
     @Test
-
     public void testAddShop() throws ShopOperationException, FileNotFoundException {
         Shop shop = new Shop();
         PersonInfo owner = new PersonInfo();
@@ -45,7 +43,6 @@ public class ShopServiceTest extends BaseTest {
         shop.setAdvice("审核中");
         File shopImg = new File("/Users/jensen/Desktop/pika.jpg");
         InputStream is = new FileInputStream(shopImg);
-
         ShopExecution se = shopService.addShop(shop, is, shopImg.getName());
         assertEquals(ShopStateEnum.CHECK.getState(), se.getState());
     }
