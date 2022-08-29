@@ -40,3 +40,82 @@
 2022-08-29 18:15:29.599 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - ==>  Preparing: update tb_shop SET shop_name=?, shop_desc=?, shop_addr=?, phone=?, shop_img=?, last_edit_time=?, enable_status=?, advice=?, area_id=?, shop_category_id=? where shop_id=? 
 2022-08-29 18:15:29.605 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - ==> Parameters: 测试的店铺4(String), test4(String), test4(String), test4(String), /upload/images/item/shop/37/2022082918105452022.jpg(String), 2022-08-29 18:10:30.584(Timestamp), 0(Integer), 审核中(String), 2(Integer), 10(Long), 37(Long)
 2022-08-29 18:15:29.632 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - <==    Updates: 1
+2022-08-29 20:27:37.626 [main] DEBUG c.imooc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.imooc.o2o.dao.ShopDao.queryByShopId] use [slave] Stategy, SqlCommand Type [SELECT]..
+2022-08-29 20:27:37.628 [main] DEBUG com.imooc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为slave
+2022-08-29 20:27:37.649 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id AND s.shop_id = ? 
+2022-08-29 20:27:37.874 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - ==> Parameters: 1(Long)
+2022-08-29 20:27:37.962 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - <==      Total: 1
+2022-08-29 20:31:08.274 [main] DEBUG c.imooc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.imooc.o2o.dao.ShopDao.queryByShopId] use [slave] Stategy, SqlCommand Type [SELECT]..
+2022-08-29 20:31:08.277 [main] DEBUG com.imooc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为slave
+2022-08-29 20:31:08.305 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id AND s.shop_id = ? 
+2022-08-29 20:31:08.467 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - ==> Parameters: 1(Long)
+2022-08-29 20:31:08.591 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - <==      Total: 1
+2022-08-29 20:31:34.912 [main] DEBUG c.imooc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.imooc.o2o.dao.ShopDao.queryByShopId] use [slave] Stategy, SqlCommand Type [SELECT]..
+2022-08-29 20:31:34.914 [main] DEBUG com.imooc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为slave
+2022-08-29 20:31:34.945 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id AND s.shop_id = ? 
+2022-08-29 20:31:35.218 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - ==> Parameters: 1(Long)
+2022-08-29 20:31:35.288 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - <==      Total: 1
+2022-08-29 20:31:52.790 [main] DEBUG c.imooc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.imooc.o2o.dao.ShopDao.queryByShopId] use [slave] Stategy, SqlCommand Type [SELECT]..
+2022-08-29 20:31:52.792 [main] DEBUG com.imooc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为slave
+2022-08-29 20:31:52.809 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id AND s.shop_id = ? 
+2022-08-29 20:31:53.039 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - ==> Parameters: 1(Long)
+2022-08-29 20:31:53.107 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - <==      Total: 1
+2022-08-29 20:34:06.573 [main] DEBUG c.imooc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.imooc.o2o.dao.ShopDao.queryByShopId] use [slave] Stategy, SqlCommand Type [SELECT]..
+2022-08-29 20:34:06.575 [main] DEBUG com.imooc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为slave
+2022-08-29 20:34:06.595 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id AND s.shop_id = ? 
+2022-08-29 20:34:06.921 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - ==> Parameters: 1(Long)
+2022-08-29 20:34:07.034 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - <==      Total: 1
+2022-08-29 20:35:21.280 [main] DEBUG c.imooc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.imooc.o2o.dao.ShopDao.queryByShopId] use [slave] Stategy, SqlCommand Type [SELECT]..
+2022-08-29 20:35:21.285 [main] DEBUG com.imooc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为slave
+2022-08-29 20:35:21.321 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id AND s.shop_id = ? 
+2022-08-29 20:35:21.588 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - ==> Parameters: 1(Long)
+2022-08-29 20:35:21.724 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - <==      Total: 1
+2022-08-29 21:52:13.472 [main] DEBUG c.imooc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.imooc.o2o.dao.ShopDao.insertShop] use [master] Stategy, SqlCommand Type [INSERT]..
+2022-08-29 21:52:13.474 [main] DEBUG com.imooc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为master
+2022-08-29 21:52:13.482 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - ==>  Preparing: INSERT INTO tb_shop(owner_id, area_id, shop_category_id, shop_name, shop_desc, shop_addr, phone, shop_img, priority, create_time, last_edit_time, enable_status, advice) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2022-08-29 21:52:13.540 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 2(Integer), 10(Long), 测试的店铺4(String), test4(String), test4(String), test4(String), null, null, 2022-08-29 21:52:13.454(Timestamp), 2022-08-29 21:52:13.454(Timestamp), 0(Integer), 审核中(String)
+2022-08-29 21:52:13.559 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - <==    Updates: 1
+2022-08-29 21:52:13.579 [main] DEBUG com.imooc.o2o.util.ImageUtil - current relativeAddr is :/upload/images/item/shop/39/2022082921521368155.jpg
+2022-08-29 21:52:13.579 [main] DEBUG com.imooc.o2o.util.ImageUtil - current complete addr is :/Users/jensen/Desktop/o2oResource/image/upload/images/item/shop/39/2022082921521368155.jpg
+2022-08-29 21:52:13.579 [main] DEBUG com.imooc.o2o.util.ImageUtil - basePath is :/Users/jensen/Desktop/IDEA/o2o/target/test-classes/
+2022-08-29 21:52:14.506 [main] DEBUG c.imooc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.imooc.o2o.dao.ShopDao.updateShop] use [master] Stategy, SqlCommand Type [UPDATE]..
+2022-08-29 21:52:14.507 [main] DEBUG com.imooc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为master
+2022-08-29 21:52:14.525 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - ==>  Preparing: update tb_shop SET shop_name=?, shop_desc=?, shop_addr=?, phone=?, shop_img=?, last_edit_time=?, enable_status=?, advice=?, area_id=?, shop_category_id=? where shop_id=? 
+2022-08-29 21:52:14.529 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - ==> Parameters: 测试的店铺4(String), test4(String), test4(String), test4(String), /upload/images/item/shop/39/2022082921521368155.jpg(String), 2022-08-29 21:52:13.454(Timestamp), 0(Integer), 审核中(String), 2(Integer), 10(Long), 39(Long)
+2022-08-29 21:52:14.545 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - <==    Updates: 1
+2022-08-29 21:55:33.494 [main] DEBUG c.imooc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.imooc.o2o.dao.ShopDao.queryByShopId] use [slave] Stategy, SqlCommand Type [SELECT]..
+2022-08-29 21:55:33.496 [main] DEBUG com.imooc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为slave
+2022-08-29 21:55:33.516 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id AND s.shop_id = ? 
+2022-08-29 21:55:33.739 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - ==> Parameters: 35(Long)
+2022-08-29 21:55:33.817 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - <==      Total: 1
+2022-08-29 21:55:33.838 [main] DEBUG com.imooc.o2o.util.ImageUtil - current relativeAddr is :/upload/images/item/shop/35/2022082921553374084.png
+2022-08-29 21:55:33.842 [main] DEBUG com.imooc.o2o.util.ImageUtil - current complete addr is :/Users/jensen/Desktop/o2oResource/image/upload/images/item/shop/35/2022082921553374084.png
+2022-08-29 21:55:33.842 [main] DEBUG com.imooc.o2o.util.ImageUtil - basePath is :/Users/jensen/Desktop/IDEA/o2o/target/test-classes/
+2022-08-29 21:55:34.263 [main] DEBUG c.imooc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.imooc.o2o.dao.ShopDao.updateShop] use [master] Stategy, SqlCommand Type [UPDATE]..
+2022-08-29 21:55:34.265 [main] DEBUG com.imooc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为master
+2022-08-29 21:55:34.294 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - ==>  Preparing: update tb_shop SET shop_name=?, shop_desc=?, shop_img=?, last_edit_time=? where shop_id=? 
+2022-08-29 21:55:34.311 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - ==> Parameters: 奶茶飞了(String), 一个8月29日测试的更新(String), /upload/images/item/shop/35/2022082921553374084.png(String), 2022-08-29 21:55:34.259(Timestamp), 35(Long)
+2022-08-29 21:55:34.379 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - <==    Updates: 1
+2022-08-29 21:55:34.390 [main] DEBUG c.imooc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.imooc.o2o.dao.ShopDao.queryByShopId] use [slave] Stategy, SqlCommand Type [SELECT]..
+2022-08-29 21:55:34.394 [main] DEBUG com.imooc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为slave
+2022-08-29 21:55:34.394 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id AND s.shop_id = ? 
+2022-08-29 21:55:34.405 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - ==> Parameters: 35(Long)
+2022-08-29 21:55:34.436 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - <==      Total: 1
+2022-08-29 21:56:11.178 [main] DEBUG c.imooc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.imooc.o2o.dao.ShopDao.queryByShopId] use [slave] Stategy, SqlCommand Type [SELECT]..
+2022-08-29 21:56:11.183 [main] DEBUG com.imooc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为slave
+2022-08-29 21:56:11.203 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id AND s.shop_id = ? 
+2022-08-29 21:56:11.487 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - ==> Parameters: 35(Long)
+2022-08-29 21:56:11.578 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - <==      Total: 1
+2022-08-29 21:56:11.604 [main] DEBUG com.imooc.o2o.util.ImageUtil - current relativeAddr is :/upload/images/item/shop/35/2022082921561152057.png
+2022-08-29 21:56:11.604 [main] DEBUG com.imooc.o2o.util.ImageUtil - current complete addr is :/Users/jensen/Desktop/o2oResource/image/upload/images/item/shop/35/2022082921561152057.png
+2022-08-29 21:56:11.605 [main] DEBUG com.imooc.o2o.util.ImageUtil - basePath is :/Users/jensen/Desktop/IDEA/o2o/target/test-classes/
+2022-08-29 21:56:11.953 [main] DEBUG c.imooc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.imooc.o2o.dao.ShopDao.updateShop] use [master] Stategy, SqlCommand Type [UPDATE]..
+2022-08-29 21:56:11.954 [main] DEBUG com.imooc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为master
+2022-08-29 21:56:11.971 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - ==>  Preparing: update tb_shop SET shop_name=?, shop_desc=?, shop_img=?, last_edit_time=? where shop_id=? 
+2022-08-29 21:56:11.984 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - ==> Parameters: 奶茶飞了(String), 一个8月29日测试的更新(String), /upload/images/item/shop/35/2022082921561152057.png(String), 2022-08-29 21:56:11.951(Timestamp), 35(Long)
+2022-08-29 21:56:12.011 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - <==    Updates: 1
+2022-08-29 21:56:12.014 [main] DEBUG c.imooc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.imooc.o2o.dao.ShopDao.queryByShopId] use [slave] Stategy, SqlCommand Type [SELECT]..
+2022-08-29 21:56:12.014 [main] DEBUG com.imooc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为slave
+2022-08-29 21:56:12.015 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id AND s.shop_id = ? 
+2022-08-29 21:56:12.016 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - ==> Parameters: 35(Long)
+2022-08-29 21:56:12.039 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - <==      Total: 1

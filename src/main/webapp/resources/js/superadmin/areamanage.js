@@ -266,6 +266,5 @@ function batch(flag) {
 						changeStatus(url);
 					}
 				});
-
 	}
 }

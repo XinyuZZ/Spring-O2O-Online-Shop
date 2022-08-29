@@ -40,6 +40,7 @@ public class ImageUtil {
         }
         return newFile;
     }
+
     /**
      * 处理缩略图，并返回新生成图片的相对值路径
      *
@@ -47,7 +48,7 @@ public class ImageUtil {
      * @param targetAddr
      * @return
      */
-    public static String generateThumbnail(InputStream thumbnailInputStream,String fileName, String targetAddr) {
+    public static String generateThumbnail(InputStream thumbnailInputStream, String fileName, String targetAddr) {
         // 获取不重复的随机名
         String realFileName = getRandomFileName();
         // 获取文件的扩展名如png,jpg等
@@ -112,6 +113,24 @@ public class ImageUtil {
         return nowTimeStr + rannum;
     }
 
+    /**
+     * 判断删除文件还是删除路径
+     *
+     * @param pathName
+     */
+    public static void deleteFileOrPath(String pathName) {
+        File fileOrPath = new File(PathUtil.getImgBasePath() + pathName);
+        if (fileOrPath.exists()) {
+            if (fileOrPath.isDirectory()) {
+                File[] file = fileOrPath.listFiles();
+                for (File f : file) {
+                    f.delete();
+                }
+            }
+            fileOrPath.delete();
+        }
+    }
+
 
     public static void main(String[] args) throws IOException {
         long startTime = System.currentTimeMillis();
@@ -120,6 +139,6 @@ public class ImageUtil {
                 .watermark(Positions.BOTTOM_RIGHT, ImageIO.read(new File(basePath + "/watermark.jpg")), 0.25f)
                 .outputQuality(0.8f).toFile("/Users/jensen/Desktop/trans2.jpg");
         long endTime = System.currentTimeMillis();
-        System.out.println("Cost: "+(endTime-startTime)+"ms");
+        System.out.println("Cost: " + (endTime - startTime) + "ms");
     }
 }

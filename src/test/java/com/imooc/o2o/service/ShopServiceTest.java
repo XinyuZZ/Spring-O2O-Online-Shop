@@ -8,6 +8,8 @@ import com.imooc.o2o.entity.Shop;
 import com.imooc.o2o.entity.ShopCategory;
 import com.imooc.o2o.enums.ShopStateEnum;
 import com.imooc.o2o.exception.ShopOperationException;
+import com.imooc.o2o.service.impl.ShopServiceImpl;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -22,6 +24,8 @@ import static org.junit.Assert.assertEquals;
 public class ShopServiceTest extends BaseTest {
     @Autowired
     private ShopService shopService;
+
+    @Ignore
     @Test
     public void testAddShop() throws ShopOperationException, FileNotFoundException {
         Shop shop = new Shop();
@@ -45,5 +49,19 @@ public class ShopServiceTest extends BaseTest {
         InputStream is = new FileInputStream(shopImg);
         ShopExecution se = shopService.addShop(shop, is, shopImg.getName());
         assertEquals(ShopStateEnum.CHECK.getState(), se.getState());
+    }
+
+    @Test
+    public void testModifyShop() throws ShopOperationException, FileNotFoundException {
+        long shopId = 35L;
+        Shop shop = new Shop();
+        File shopImg = new File("/Users/jensen/Desktop/pikk.png");
+        shop.setShopId(shopId);
+        InputStream is = new FileInputStream(shopImg);
+        shop.setShopDesc("一个8月29日测试的更新");
+        shop.setShopName("奶茶飞了");
+        ShopExecution shopExecution = shopService.modifyShop(shop, is, "pikk.png");
+        assertEquals("奶茶飞了", shopExecution.getShop().getShopName());
+        assertEquals("一个8月29日测试的更新", shopExecution.getShop().getShopDesc());
     }
 }
