@@ -1,3 +1,6 @@
 2022-08-29 11:52:47.912 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==>  Preparing: select area_id, area_name, priority, create_time, last_edit_time from tb_area order by priority desc 
 2022-08-29 11:52:48.056 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==> Parameters: 
 2022-08-29 11:52:48.136 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - <==      Total: 3
+2022-08-29 12:20:50.954 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==>  Preparing: select area_id, area_name, priority, create_time, last_edit_time from tb_area order by priority desc 
+2022-08-29 12:20:51.063 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==> Parameters: 
+2022-08-29 12:20:51.163 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - <==      Total: 3
