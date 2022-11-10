@@ -54,7 +54,6 @@ public class DynamicDataSourceInterceptor implements Interceptor {
         DynamicDataSourceHolder.setDbType(lookupKey);
         return invocation.proceed();
     }
-
     @Override
     public Object plugin(Object target) {
         if (target instanceof Executor) {
@@ -63,9 +62,7 @@ public class DynamicDataSourceInterceptor implements Interceptor {
             return target;
         }
     }
-
     @Override
     public void setProperties(Properties properties) {
-
     }
 }
