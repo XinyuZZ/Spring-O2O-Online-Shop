@@ -1,5 +1,9 @@
-2022-11-10 15:18:56.358 [main] DEBUG c.imooc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.imooc.o2o.dao.AreaDao.queryArea] use [slave] Stategy, SqlCommand Type [SELECT]..
-2022-11-10 15:18:56.363 [main] DEBUG com.imooc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为slave
-2022-11-10 15:18:56.384 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==>  Preparing: select area_id, area_name, priority, create_time, last_edit_time from tb_area order by priority desc 
-2022-11-10 15:18:56.553 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==> Parameters: 
-2022-11-10 15:18:56.681 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - <==      Total: 3
+2022-11-19 18:19:08.921 [main] DEBUG c.imooc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.imooc.o2o.dao.ShopDao.queryShopList] use [slave] Stategy, SqlCommand Type [SELECT]..
+2022-11-19 18:19:08.926 [main] DEBUG com.imooc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为slave
+2022-11-19 18:19:08.973 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id = ? s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id order by s.priority desc LIMIT ?,?; 
+2022-11-19 18:19:09.161 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - ==> Parameters: 1(Long), 0(Integer), 6(Integer)
+2022-11-19 18:20:34.699 [main] DEBUG c.imooc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.imooc.o2o.dao.ShopDao.queryShopList] use [slave] Stategy, SqlCommand Type [SELECT]..
+2022-11-19 18:20:34.702 [main] DEBUG com.imooc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为slave
+2022-11-19 18:20:34.749 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id = ? and s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id order by s.priority desc LIMIT ?,?; 
+2022-11-19 18:20:34.939 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - ==> Parameters: 1(Long), 0(Integer), 6(Integer)
+2022-11-19 18:20:34.990 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - <==      Total: 6
